@@ -81,13 +81,32 @@
 # print(day_name(day))
 
 
-def get_day_name(day_name):
-    days = ['Monday','Tuesday','Wednesday','Thusday','Friday','Satuarday','Sunday']
-    if 1<= day_name <=7 :
-        return days[day_name-1]
+# def get_day_name(day_name):
+#     days = ['Monday','Tuesday','Wednesday','Thusday','Friday','Satuarday','Sunday']
+#     if 1<= day_name <=7 :
+#         return days[day_name-1]
 
-day_name = int(input("Enter Day no. from [1-7] :  "))
-print(get_day_name(day_name))
+# day_name = int(input("Enter Day no. from [1-7] :  "))
+# print(get_day_name(day_name))
+
+
+
+
+
+def array_01():
+    arr = []
+
+    print("Enter 5 elements of an array:")
+    for i in range(5):
+        num = int(input(f"Enter element for index {i}: "))
+        arr.append(num)
+
+    print("Final Array elements:")
+    for i in range(5):
+        print(f"Index {i}: {arr[i]}")
+
+array_01()
+    
 
 
 
