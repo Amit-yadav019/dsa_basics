@@ -93,20 +93,42 @@
 
 
 
-def array_01():
-    arr = []
+# def array_01():
+#     arr = []
 
-    print("Enter 5 elements of an array:")
-    for i in range(5):
-        num = int(input(f"Enter element for index {i}: "))
-        arr.append(num)
+#     print("Enter 5 elements of an array:")
+#     for i in range(5):
+#         num = int(input(f"Enter element for index {i}: "))
+#         arr.append(num)
 
-    print("Final Array elements:")
-    for i in range(5):
-        print(f"Index {i}: {arr[i]}")
+#     print("Final Array elements:")
+#     for i in range(5):
+#         print(f"Index {i}: {arr[i]}")
 
-array_01()
+# array_01()
     
+
+def analyze_string_dsa(input_string):
+    # Step 1: Find the total length (number of characters)
+    # In C++ this is s.size() or s.length()
+    string_len = len(input_string)
+    print(f"The string length is: {string_len}")
+    
+    # Step 2: Access the very last character manually using indices
+    # Since indexing starts at 0, the last character is always at (length - 1)
+    last_idx = string_len - 1
+    last_char = input_string[last_idx]
+    
+    print(f"The character at index 0 is: {input_string[0]}")
+    print(f"The character at the last index ({last_idx}) is: {last_char}")
+    
+    # Step 3: Loop through the string like an array
+    print("Printing characters one by one:")
+    for i in range(string_len):
+        print(f"Index {i}: {input_string[i]}")
+
+# Calling the function with Striver's exact string
+analyze_string_dsa("Striver")
 
 
 
