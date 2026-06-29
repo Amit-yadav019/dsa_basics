@@ -129,6 +129,7 @@ def analyze_string_dsa(input_string):
 
 # Calling the function with Striver's exact string
 analyze_string_dsa("Striver")
+analyze_string_dsa("Striver")
 
 
 
