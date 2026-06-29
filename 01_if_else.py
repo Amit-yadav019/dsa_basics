@@ -108,28 +108,98 @@
 # array_01()
     
 
-def analyze_string_dsa(input_string):
-    # Step 1: Find the total length (number of characters)
-    # In C++ this is s.size() or s.length()
-    string_len = len(input_string)
-    print(f"The string length is: {string_len}")
+# def analyze_string_dsa(input_string):
+#     # Step 1: Find the total length (number of characters)
+#     # In C++ this is s.size() or s.length()
+#     string_len = len(input_string)
+#     print(f"The string length is: {string_len}")
     
-    # Step 2: Access the very last character manually using indices
-    # Since indexing starts at 0, the last character is always at (length - 1)
-    last_idx = string_len - 1
-    last_char = input_string[last_idx]
+#     # Step 2: Access the very last character manually using indices
+#     # Since indexing starts at 0, the last character is always at (length - 1)
+#     last_idx = string_len - 1
+#     last_char = input_string[last_idx]
     
-    print(f"The character at index 0 is: {input_string[0]}")
-    print(f"The character at the last index ({last_idx}) is: {last_char}")
+#     print(f"The character at index 0 is: {input_string[0]}")
+#     print(f"The character at the last index ({last_idx}) is: {last_char}")
     
-    # Step 3: Loop through the string like an array
-    print("Printing characters one by one:")
-    for i in range(string_len):
-        print(f"Index {i}: {input_string[i]}")
+#     # Step 3: Loop through the string like an array
+#     print("Printing characters one by one:")
+#     for i in range(string_len):
+#         print(f"Index {i}: {input_string[i]}")
 
-# Calling the function with Striver's exact string
-analyze_string_dsa("Striver")
-analyze_string_dsa("Striver")
+# # Calling the function with Striver's exact string
+# analyze_string_dsa("Striver")
+
+
+# OUTPUT
+# The string length is: 7
+# The character at index 0 is: S
+# The character at the last index (6) is: r
+# Printing characters one by one:
+# Index 0: S
+# Index 1: t
+# Index 2: r
+# Index 3: i
+# Index 4: v
+# Index 5: e
+# Index 6: r
+
+
+# def striver_multiple(sum_striver):
+#     string_len = len(sum_striver)
+#     print(f"the character length is {string_len}")
+
+#     last_index = string_len - 1 
+#     character = sum_striver[last_index]
+
+#     print(f'the character at index 0 is : {character[0]}')
+#     print(f'the character at index 1 is : {sum_striver[1]}')
+#     print(f'the character at index 2 is : {sum_striver[2]}')
+#     print(f'the character at index 3 is : {sum_striver[3]}')
+#     print(f'the character at index 4 is : {sum_striver[4]}')
+#     print(f'the character at index 5 is : {sum_striver[5]}')
+#     print(f'the character at index 6 is : {sum_striver[6]}')
+
+#     print(f"the character at last index {last_index} is : {character}")
+
+
+#     print(" NOW PRINTING EACH INDEX WITH CHARACTER ONE BY ONE ")
+
+#     for i in range(string_len):
+#         print(f'index{i} : {sum_striver[i]}')
+
+
+# striver_multiple("shyamsw")
+
+
+# IF WANTED TO TAKE INPUT DIRRECTLY FROM USERS 
+ 
+def striver_multiple(sum_striver):
+    string_len = len(sum_striver)
+    print(f"the character length is {string_len}")
+
+    last_index = string_len - 1 
+    character = sum_striver[last_index]
+
+    print(f'the character at index 0 is : {character[0]}')
+    print(f'the character at index 1 is : {sum_striver[1]}')
+    
+
+    print(f"the character at last index {last_index} is : {character}")
+
+
+    print(" NOW PRINTING EACH INDEX WITH CHARACTER ONE BY ONE ")
+
+    for i in range(string_len):
+        print(f'index{i} : {sum_striver[i]}')
+
+user_input = input("Enter any string  :   ")
+input = user_input.strip()
+striver_multiple(input)
+
+
+
+
 
 
 
