@@ -174,28 +174,81 @@
 
 # IF WANTED TO TAKE INPUT DIRRECTLY FROM USERS 
  
-def striver_multiple(sum_striver):
-    string_len = len(sum_striver)
-    print(f"the character length is {string_len}")
+# def striver_multiple(sum_striver):
+#     string_len = len(sum_striver)
+#     print(f"the character length is {string_len}")
 
-    last_index = string_len - 1 
-    character = sum_striver[last_index]
+#     last_index = string_len - 1 
+#     character = sum_striver[last_index]
 
-    print(f'the character at index 0 is : {character[0]}')
-    print(f'the character at index 1 is : {sum_striver[1]}')
+#     print(f'the character at index 0 is : {character[0]}')
+#     print(f'the character at index 1 is : {sum_striver[1]}')
     
 
-    print(f"the character at last index {last_index} is : {character}")
+#     print(f"the character at last index {last_index} is : {character}")
 
 
-    print(" NOW PRINTING EACH INDEX WITH CHARACTER ONE BY ONE ")
+#     print(" NOW PRINTING EACH INDEX WITH CHARACTER ONE BY ONE ")
 
-    for i in range(string_len):
-        print(f'index{i} : {sum_striver[i]}')
+#     for i in range(string_len):
+#         print(f'index{i} : {sum_striver[i]}')
 
-user_input = input("Enter any string  :   ")
-input = user_input.strip()
-striver_multiple(input)
+# user_input = input("Enter any string  :   ")
+# input = user_input.strip()
+# striver_multiple(input)
+
+# for priniting the name multuple time 
+
+# for i in range (1,10):
+#     print(f"Striver")
+
+# if wanted to take input for the message and no. of times from users 
+
+# message = input("Enter , what you want to print :  ")
+# times = int(input("how many times you wanted to print : "))
+
+# for i in range ( 1, times+1):
+#     print(message)
+
+
+
+# Gretting by using functions 
+
+# def names(name):
+#     print(f" hello {name} how are you ?")
+
+# name = input("whats your name : ")
+# names(name)
+
+
+# mathematics using functions 
+
+def calculation(num1 , num2 , operations):
+    if operations == "+":
+        return num1 + num2 
+
+    elif operations == "-" :
+        return num1 - num2 
+    elif operations == "/":
+        if num2 != 0:
+            return num1/num2 
+        else:
+            return "Error ! : invalid " 
+    elif operations == "*":
+        return num1 * num2 
+    else :
+        return " Invalid input : please inter correct operations "
+    
+num1 = int(input("Enter the 1st number : "))
+operations = input("Enter operations among '+', '-'  '/'  '*' ")
+num2 = int(input("enter the 2nd number : "))   
+
+result = calculation(num1 , num2 , operations)
+print(result)
+
+
+
+
 
 
 
