@@ -223,28 +223,54 @@
 
 # mathematics using functions 
 
-def calculation(num1 , num2 , operations):
-    if operations == "+":
-        return num1 + num2 
+# def calculation(num1 , num2 , operations):
+#     if operations == "+":
+#         return num1 + num2 
 
-    elif operations == "-" :
-        return num1 - num2 
-    elif operations == "/":
-        if num2 != 0:
-            return num1/num2 
-        else:
-            return "Error ! : invalid " 
-    elif operations == "*":
-        return num1 * num2 
-    else :
-        return " Invalid input : please inter correct operations "
+#     elif operations == "-" :
+#         return num1 - num2 
+#     elif operations == "/":
+#         if num2 != 0:
+#             return num1/num2 
+#         else:
+#             return "Error ! : invalid " 
+#     elif operations == "*":
+#         return num1 * num2 
+#     else :
+#         return " Invalid input : please inter correct operations "
     
-num1 = int(input("Enter the 1st number : "))
-operations = input("Enter operations among '+', '-'  '/'  '*' ")
-num2 = int(input("enter the 2nd number : "))   
+# num1 = int(input("Enter the 1st number : "))
+# operations = input("Enter operations among '+', '-'  '/'  '*' ")
+# num2 = int(input("enter the 2nd number : "))   
 
-result = calculation(num1 , num2 , operations)
-print(result)
+# result = calculation(num1 , num2 , operations)
+# print(result)
+
+
+# for immutable type function 
+def do_something(s):
+    # s initially points to "raj"
+    s = "taj" + s[1:] # Creates a brand NEW string "taj"
+    print("Inside function:", s) # Prints "taj"
+
+def main():
+    s = "raj"
+    do_something(s)
+    print("Inside main:", s) # Prints "raj" (Original is untouched!)
+
+
+
+
+
+# Mutable type Function 
+
+def do_something_mutable(my_list):
+    my_list[0] = 't' # Modifies the original object directly
+
+def main():
+    s_list = ['r', 'a', 'j']
+    do_something_mutable(s_list)
+    print("Inside main:", s_list) # Prints ['t', 'a', 'j'] (Original changed!)
 
 
 
