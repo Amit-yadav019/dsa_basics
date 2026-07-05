@@ -147,15 +147,15 @@
     
 
 
-n = int(input(" whats the value of n : "))
-for i in range(0,n):
-    for j in range(0,i):
-        print(" ",end='')
-    for j in range(0,2*n-2*i-1):
-        print("*",end='')
-    for j in range(0,i):
-        print(" ",end='')
-    print()            
+# n = int(input(" whats the value of n : "))
+# for i in range(0,n):
+#     for j in range(0,i):
+#         print(" ",end='')
+#     for j in range(0,2*n-2*i-1):
+#         print("*",end='')
+#     for j in range(0,i):
+#         print(" ",end='')
+#     print()            
 
 #  whats the value of n : 8
 # ***************
@@ -166,7 +166,89 @@ for i in range(0,n):
 #      *****     
 #       ***      
 #        *        
-      
+
+
+
+# n = int(input(" enter whats the number n is : "))
+# for i in range(0,n//2 + 1):
+#     for j in range(0,n//2-i):
+#         print(" ",end='')
+#     for j in range(0,2*i+1):
+#         print("*",end='')
+#     for j in range(0,n+1/2-i-1):
+#         print(" ",end='')
+# for i in range(n/2,n):        
+#     for j in range(n+1/2-i-1,i):
+#         print(" ",end='')
+#     for j in range(2*i+1,2*n-2*i-1):
+#         print("*",end='')   
+#     for j in range(n+1/2-i-1,i):   
+#         print(" ",end='')
+#     print()    
+            
+
+
+# n = int(input("Enter number: "))
+
+# for i in range(0, n // 2 + 1):
+#     for j in range(0, n // 2 - i):
+#         print(" ", end="")
+#     for j in range(0, 2 * i + 1):
+#         print("*", end="")
+#     print()
+
+# for i in range(n // 2 - 1, -1, -1):
+#     for j in range(0, n // 2 - i):
+#         print(" ", end="")
+#     for j in range(0, 2 * i + 1):
+#         print("*", end="")
+#     print()            
+
+
+# n = int(input("Enter an odd number: "))
+
+# # Upper half
+# for i in range(0, n // 2 + 1):
+#     # Spaces
+#     for j in range(0, n // 2 - i):
+#         print(" ", end="")
+
+#     # Stars
+#     for j in range(0, 2 * i + 1):
+#         print("*", end="")
+
+#     print()
+
+# # Lower half
+# for i in range(n // 2 - 1, -1, -1):
+#     # Spaces
+#     for j in range(0, n // 2 - i):
+#         print(" ", end="")
+
+#     # Stars
+#     for j in range(0, 2 * i + 1):
+#         print("*", end="")
+
+#     print()
+
+
+n = int(input("Enter an odd number : "))
+for i in range(0,(n+1)//2):
+    for j in range(0,(n+1)//2 -i -1):
+        print(" ",end='')
+    for j in range(0,(n+1)//2 - 3 +2*i):
+        print("*",end='')
+    for j in range(0,(n+1)//2-i-1):
+        print(" ",end='')
+for i in range((n+1)//2 + 1,n):
+    for j in range(0,i):
+        print(" ", end='')
+    for j in range(0,n+1 - 2*i -3):
+        print("*",end='')
+    for j in range(0,i):
+        print(" ",end='')
+print()                             
+
 
 
 
