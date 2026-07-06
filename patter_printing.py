@@ -231,25 +231,35 @@
 
 #     print()
 
+def print1(n):
+    for i in range(0,n):
+        
 
-n = int(input("Enter an odd number : "))
-for i in range(0,(n+1)//2):
-    for j in range(0,(n+1)//2 -i -1):
-        print(" ",end='')
-    for j in range(0,(n+1)//2 - 3 +2*i):
-        print("*",end='')
-    for j in range(0,(n+1)//2-i-1):
-        print(" ",end='')
-for i in range((n+1)//2 + 1,n):
-    for j in range(0,i):
-        print(" ", end='')
-    for j in range(0,n+1 - 2*i -3):
-        print("*",end='')
-    for j in range(0,i):
-        print(" ",end='')
-print()                             
+        for j in range(0,n-i-1):
 
+            print(" ",end='')
+        for j in range(0,2*i+1):
+            print("*",end='')
+        for j in range(0,n-i-1):
+            print(" ",end='')
+        print()       
+num = int(input("whats the number n : "))
+print1(num)        
 
+def print2(n):
+    for i in range(0,n):
+        for j in range(0,i):
+            print(" ",end='')
+        for j in range(0,2*n-2*i-1):
+            print("*",end='')
+        for j in range(0,i):
+            print(" ",end='')
+        print()  
+num = int(input("whats number n : "))
+print2(num)    
+
+print1(5)
+print2(5)
 
 
 
