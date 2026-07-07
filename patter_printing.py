@@ -322,13 +322,98 @@ def print4(n):
             print(j,end='')
 
         print()
-if __name__=="__main__":
-    n = int(input("Enter any number : "))
-    print4(n)                
+# if __name__=="__main__":
+#     n = int(input("Enter any number : "))
+#     print4(n)                
     
+    # Output 
+# Enter any number : 5
+# 1________1
+# 12______21
+# 123____321
+# 1234__4321
+# 1234554321
+
+def print5(n):
+    num = 1
+    for i in range(1,n+1):
+       
+        for j in range(1,i):
+            print(num,end='')
+            num = num + 1
+        print()
+# if __name__ == "__main__":
+#     n = int(input("whats the number n : "))
+#     print5(n)            
+
+#. OUTPUT 
+
+# whats the number n : 5
+
+# 1
+# 23
+# 456
+# 78910
+
+
+
+def print6(n):
+    for i in range(1,n+1):
+        for j in range(ord('A'),ord('A')+i):
+            print(chr(j),end='')
+        print()
+# if __name__ == "__main__":
+#     n = int(input("Whats the number n is : "))
+#     print6(n)           
+
+
+# OUTPUT 
+# Whats the number n is : 5
+# A
+# AB
+# ABC
+# ABCD
+# ABCDE
+
+def print7(n):
+    for i in range(1,n+1):
+        for j in range(ord('A'),ord('A')+n+1-i):
+            print(chr(j),end='')
+        print()
+# if __name__ == "__main__":
+#     n = int(input(" Enter any number : "))
+#     print7(n)            
+
+
+# OUTPUT
+#  Enter any number : 5
+# ABCDE
+# ABCD
+# ABC
+# AB
+# A
+
+def print8(n):
+    for i in range(0,n):
+        char = chr(ord('A')+i)
+        for j in range(1,i+2):
+            print(char,end='')
+        print()
+
+if __name__ == "__main__":
+     n = int(input(" Enter any number : "))
+     print8(n)  
 
                
-
+# OUTPUT 
+#  Enter any number : 7
+# A
+# BB
+# CCC
+# DDDD
+# EEEEE
+# FFFFFF
+# GGGGGGG
 
 
 
