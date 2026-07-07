@@ -243,8 +243,8 @@ def print1(n):
         for j in range(0,n-i-1):
             print(" ",end='')
         print()       
-num = int(input("whats the number n : "))
-print1(num)        
+# num = int(input("whats the number n : "))
+# print1(num)        
 
 def print2(n):
     for i in range(0,n):
@@ -255,11 +255,81 @@ def print2(n):
         for j in range(0,i):
             print(" ",end='')
         print()  
-num = int(input("whats number n : "))
-print2(num)    
+# num = int(input("whats number n : "))
+# print2(num)    
 
-print1(5)
-print2(5)
+# print1(5)
+# print2(5)
+
+# if __name__ == "__main__":
+#     n = int(input("Enter n: "))
+#     print2(n)
+
+
+
+## NOW WE HAVE TO PRINT THIS PATTERN  
+
+#   *
+#.  * *
+#.  * * *
+#.  * * * *
+#.  * * * * *
+#.  * * * * 
+#.  * * * 
+#.  * * 
+#.  * 
+
+
+
+
+
+def print3(n):
+    for i in range(1,2*n):
+        stars = i 
+        if i>n:
+            stars = 2*n - i
+        for j in range(0,stars):
+            print(" * ",end='')
+        print()
+
+# if __name__=="__main__":
+#     n = int(input("Enter an odd number "))
+#     print3(n)
+
+
+def print4(n):
+    for i in range(0,n):
+        if i%2 == 0:
+            start = 1
+        else :
+            start = 0
+        for j in range(i + 1) :
+            print(f"  {start}  ",end='')
+            start = 1 - start
+        print()
+# if __name__=="__main__":
+#     n = int(input("Enter an any  number : "))
+#     print4(n)                   
+
+
+def print4(n):
+    for i in range(1,n+1):
+        for j in range(1,i+1):
+            print(j ,end='')
+        for j in range(2*n-2*i):
+            print("_",end='')
+        for j in range(i,0,-1):
+            print(j,end='')
+
+        print()
+if __name__=="__main__":
+    n = int(input("Enter any number : "))
+    print4(n)                
+    
+
+               
+
+
 
 
 
