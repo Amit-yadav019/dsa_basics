@@ -400,9 +400,9 @@ def print8(n):
             print(char,end='')
         print()
 
-if __name__ == "__main__":
-     n = int(input(" Enter any number : "))
-     print8(n)  
+# if __name__ == "__main__":
+#      n = int(input(" Enter any number : "))
+#      print8(n)  
 
                
 # OUTPUT 
@@ -414,6 +414,165 @@ if __name__ == "__main__":
 # EEEEE
 # FFFFFF
 # GGGGGGG
+
+
+
+def print9(n):
+    for i in range(0,n):
+        for j in range(0,n-i-1):
+            print("_",end='')
+        char = chr(ord('A'))
+        rev = (2*i +1)//2   
+        for j in range(0,2*i+1):
+            print(char,end='')
+            if j < rev :
+                char = chr(ord(char) + 1)
+            else :
+                char = chr(ord(char) - 1) 
+        for j in range(0,n-i-1):
+            print("_",end='')
+        print()
+# if __name__ == "__main__":
+#     n = int(input("whats the number n : "))
+#     print9(n)   
+
+
+  # OUTPUT            
+
+# whats the number n : 6
+# _____A_____
+# ____ABA____
+# ___ABCBA___
+# __ABCDCBA__
+# _ABCDEDCBA_
+# ABCDEFEDCBA
+
+
+
+def print10(n):
+    for i in range(0,n):
+        char = chr(ord('A')+n-i-1)
+
+
+
+
+        for j in range(0,i+1):
+            print(char,end='')
+            char = chr(ord(char) + 1)
+        for j in range(0,n-1-i):
+            print("_",end='')
+        print()
+
+# if __name__ == "__main__":
+#     n = int(input("whats the number n : "))
+#     print10(n)   
+
+
+
+
+def print11(n):
+    for i in range(0,2*n):
+        rev = n
+        if i<rev:
+
+            for j in range(0,n-i):
+                print("*",end="")
+            for j in range(0,2*i):
+                print(" ",end='')
+            for j in range(0,n-i):
+                print("*",end='')
+        else:
+            for j in range(0,i-n+1):
+                print("*",end='')
+            for j in range(0,4*n - 2*i - 2):
+                print(" ",end='')
+            for j in range(0,i-n+1):
+                print("*",end='')
+
+            
+        print()
+
+
+
+# if __name__ == "__main__":
+#     n = int(input("whats the number n : "))
+#     print11(n)      
+
+# OUTPUT
+
+#     whats the number n : 6
+# ************
+# *****  *****
+# ****    ****
+# ***      ***
+# **        **
+# *          *
+# *          *
+# **        **
+# ***      ***
+# ****    ****
+# *****  *****
+# ************
+
+
+
+def print12(n):
+    for i in range(0,2*n-1):
+        if i<n:
+            stars = i +1
+            space = 2*(n-i-1)
+        else :
+            stars = 2*n-i-1
+            space = 2*(i-n+1)
+        for j in range(stars):
+            print("*",end='')
+        for j in range(space):
+            print(" ",end='')
+        for j in range(stars):
+            print("*",end='')
+        print()
+
+# if __name__ == "__main__":
+#     n = int(input("whats the number n : "))
+#     print12(n)
+
+# OUTPUT
+
+
+#     whats the number n : 7
+# *            *
+# **          **
+# ***        ***
+# ****      ****
+# *****    *****
+# ******  ******
+# **************
+# ******  ******
+# *****    *****
+# ****      ****
+# ***        ***
+# **          **
+# *            *
+
+
+
+
+# for prining a square loop 
+
+def print13(n):
+    for i in range(n):
+        for j in range(n):
+            if i == 0 or i == n-1 or j == 0 or j == n-1:
+                print("*",end='')
+
+            else:
+                print(" ",end='')
+        print()
+
+if __name__ == "__main__":
+    n = int(input("whats the number n : "))
+    print13(n)
+        
 
 
 
