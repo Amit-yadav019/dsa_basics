@@ -164,9 +164,93 @@ def divisors2(n:int):
 
 
 
+# if __name__ == "__main__":
+#     n = int(input(" Enter Any number to see the divisors  "))
+#     divisors2(n)     
+
+
+import math
+def prime(n:int):
+    count = 0 
+    for i in range(1,n+1):
+        if n%i == 0 :
+            count = count + 1
+    if count == 2:
+        print(f" yes the given number {n} is a prime number  ")
+    else:
+        print(f" the given number {n} is not a prime number ")    
+             
+# if __name__ == "__main__":
+#     n = int(input(" Enter Any number to  check for prime number  "))
+#     prime(n)         
+
+
+    # now with better time complexity 
+import math
+def prime2(n:int):
+    count = 0 
+    sqrt = math.isqrt(n)
+    for i in range(1,sqrt+1):
+        if n%i == 0 :
+            count = count + 1  
+            if ((n//i) != i) :
+                count = count + 1
+    if count ==2 :
+        print (f" hurray the given number {n} is a prime number ") 
+    else :
+        print(" ! not a prime number ")
+
+# if __name__ == "__main__":
+#     n = int(input(" Enter Any number to  check for prime number  "))
+#     prime2(n)               
+
+
+
+# now to calculate for GCD( greatest common divisor )
+def gcd(n1:int,n2:int):
+    gcd = 1
+    for i in range(1,min(n1,n2)+1):
+        if n1%i == 0 and n2%i == 0 :
+            gcd = i
+    return gcd
+
+# if __name__ == "__main__":
+#     n1 = int(input(" Enter the value of n1 : "))
+#     n2 = int(input(" Enter the value of n2 : "))
+#     print(" GCD is : ",gcd(n1,n2))
+
+    # Better Approach by using EUCLIDEAN Algorithm
+    # i.e. GCD(a,b) = GCD(a-b,b) where a>b.
+
+    # OR GCD(a,b) = GCD(a%b,b) where a > b.
+
+def gcd1(n1:int,n2:int):
+    gcd = 1 
+    while(n1>0 and n2>0):
+        if n1>n2:
+            n1 = n1%n2
+        else :
+            n2 = n2%n1
+    if n1 == 0 :
+        print(n2)  
+    else:
+        print(n1)
+
+
 if __name__ == "__main__":
-    n = int(input(" Enter Any number to see the divisors  "))
-    divisors2(n)     
+    n1 = int(input(" Enter the value of n1 : "))
+    n2 = int(input(" Enter the value of n2 : "))
+    gcd1(n1,n2)
+
+
+
+
+        
+
+
+                          
+
+            
 
 
     
