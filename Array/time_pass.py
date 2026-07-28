@@ -22,3 +22,4 @@ print(f" The index of given number {nums} is  ", linear_seach(arr,nums))
 
 print("Git test")
 print("Hello Git")
+print("Learning Git")
