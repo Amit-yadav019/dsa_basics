@@ -28,3 +28,6 @@ def max_subarray_sum_optimal(arr):
     return max_sum
 arr = [-2,1,-3,4,-1,-2,1,-5,4]
 print("The max sum of subarray is : ",max_subarray_sum_optimal(arr)) 
+
+  # T.C. = O(N) and S.C. = O(1)
+  
