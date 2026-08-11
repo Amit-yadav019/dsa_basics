@@ -29,7 +29,7 @@ def appear_once_freq(arr):
     # find the element that appear only once 
     for num in arr :
         if freq[num] == 1:
-            return num
+            return num  # T.C. = 0(n) and S.C. = 0(n)
 arr = [1,1,2,3,3,4,4]
 print("The element that appear only once is : ",appear_once_freq(arr))                
 
@@ -45,7 +45,7 @@ def appear_once_xor(arr):
     for i in range(0,n):
         result = result ^ arr[i]
     return result
-arr = [1,1,2,3,3,4,4] # T.C. = 0(n), S.C. = 0(1)
+arr = [1,1,2,2,3,4,4] # T.C. = 0(n), S.C. = 0(1)
 print("the element which appear once is ",appear_once_xor(arr))    
 
 
