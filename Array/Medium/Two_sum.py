@@ -10,7 +10,7 @@ def two_sum(arr):
 arr = [2,6,5,8,11]
 # print(two_sum(arr))     # T.C. = O(N^2) and S.C. = O(1)
 
-# Better soln. using Hashmap Dictonary
+# Better soln./ optimal using Hashmap Dictonary
 
 def two_sum_better(arr):
     n = len(arr)
@@ -23,6 +23,6 @@ def two_sum_better(arr):
         else:
             hash_map[arr[i]]= i
     return False
-arr = [2,6,5,8,11]
+arr = [2,6,5,8,11,17]
 Target = int(input("Enter the target value that you wanted : "))
-print(two_sum_better(arr))    
+print(two_sum_better(arr))    # T.C. = O(n) and S.C. = O(n)
