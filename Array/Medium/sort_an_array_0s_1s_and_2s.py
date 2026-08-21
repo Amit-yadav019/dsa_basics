@@ -17,5 +17,5 @@ def sort(arr):
     for i in range(count1+count0,count0+count1+count2):
         arr[i] = 2
     return arr
-arr = [0,1,2,0,1,2,1,2,0,0,1]
+arr = [0,1,2,0,1,2,1,2,0,0,1,0,0,1,2]
 print(sort(arr))
