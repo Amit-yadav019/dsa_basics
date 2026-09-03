@@ -49,7 +49,7 @@ def Majority_element_optimal(arr):
         else:
             count -=1   
     count_1 = 0
-    for i in range(n):
+    for i in range(n):   # T.C. = O(n) and S.C. = O(1)
         if arr[i]== element:
             count_1 +=1
     if count_1 > n/2:
@@ -57,6 +57,7 @@ def Majority_element_optimal(arr):
     return False
 arr = [7,5,5,7,5,7,5,1,5,7,5,7,1,5,1,5,5,5,1]
 print(Majority_element_optimal(arr))
+
                        
 
         
