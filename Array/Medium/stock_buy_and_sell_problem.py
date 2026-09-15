@@ -1,11 +1,13 @@
-def stock_buy_and_sell(arr):
+def buy_and_sell(arr):
     n = len(arr)
     mini = arr[0]
-    profit = 0
+    profit = 0 
+    
     for i in range(1,n):
-        cost = arr[i] - mini
-        profit = max(profit,cost)
-        mini = min(mini,arr[i])
+        cost = arr[i]- mini 
+        profit = max(profit, cost)
+        mini = min(mini, arr[i])
     return profit 
-arr = [7,1,5,3,6,4]
-print(stock_buy_and_sell(arr))    # T.C. = O(N) and S.C. = O(1)
+arr = [6,7,2,4,10,1,22,7,3,23]
+print(buy_and_sell(arr))
+
