@@ -20,8 +20,8 @@ def rearrange_by_sign(arr):
         ans.append(negative[i])
     return ans                     ## T.C. = O(n) + O(n) = O(2n) 
                                    ## S.C. = O(n/2) + O(n/2) + O(n) = O(2n)
-# arr = [3,1,-2,-5,2,-4]              
-# print(rearrange_by_sign(arr))
+arr = [3,1,-2,-5,2,-4]              
+print(rearrange_by_sign(arr))
 
 
 # Optimal 
@@ -39,7 +39,7 @@ def Rearrange_by_sign_optimal(arr):
             negative +=2
 
     return ans 
-arr = [3,1,-2,-5,-4,2]        
-print(Rearrange_by_sign_optimal(arr))
+# arr = [3,1,-2,-5,-4,2]        
+# print(Rearrange_by_sign_optimal(arr))
 
             
